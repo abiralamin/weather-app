@@ -34,11 +34,13 @@ async function checkWeather(city) {
     document.querySelector(".weather").style.display = "flex";
     document.querySelector(".details").style.display = "flex";
     document.querySelector(".error").style.display = "none";
+    searchBox.value = "";
   } catch (error) {
     // console.error(error);
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weather").style.display = "none";
     document.querySelector(".details").style.display = "none";
+    searchBox.value = "";
   }
 }
 
